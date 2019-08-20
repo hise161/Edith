@@ -1,4 +1,9 @@
-﻿
+
+/**
+ * Quyết Nguyễn (Quyetdaik)
+ * https://fb.com/nhquyet
+ */
+
 
 body {
       background: #000 url(matrix.gif) center center repeat;
@@ -48,12 +53,15 @@ body {
     }
 
     #shape {
-      -webkit-animation: spin 8s infinite linear;
+      -webkit-animation: spin 24s infinite linear;
     }
 
     @-webkit-keyframes spin {
-      from { -webkit-transform: rotateY(0); }
-      to   { -webkit-transform: rotateY(360deg); }
+      0% { transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);}
+      40% { transform: rotateX(15deg) rotateY(345deg) rotateZ(0deg);}
+      50% { transform: rotateX(105deg) rotateY(345deg) rotateZ(0deg);}
+      90% { transform: rotateX(105deg) rotateY(345deg) rotateZ(1turn);}
+      100% { transform: rotateX(15deg) rotateY(345deg) rotateZ(1turn);}
     }
 	
     .one {
